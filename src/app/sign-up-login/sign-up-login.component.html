@@ -1,0 +1,10 @@
+<div align="center">
+<p>Username</p>
+<input type="text" name="username" [(ngModel)]="user.username">
+<p>Password</p>
+<input type="text" name="password" [(ngModel)]="user.password">
+<div>
+<button (click)="signup()">signup</button>
+<button (click)="login()">login</button>
+</div>
+<p &ngIf="invalidLogin" style=color:blue>Invalid Login (have you signed up?)</p>
